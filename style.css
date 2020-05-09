@@ -2,11 +2,23 @@
     padding:0;
     margin:0;
     box-sizing: border-box;
-    max-width: 1600px;
+}
+
+.center{
+        text-align:start;
+        display:flex;
+        flex-direction:column;
+       align-items: center;
+    }
+
+main{
+    width:75%;
+    margin:auto;
 }
 
 header{
     width:100%;
+    margin:auto;
 }
 
 header #nav-container{
@@ -20,6 +32,10 @@ h1{
     color:white;
     background-color:black;
     padding:2.5%;
+}
+
+h1, h2, h3{
+    font-family: 'Lato', sans-serif;
 }
 
  #nav-container ul li {
@@ -57,7 +73,7 @@ main {
 }
 
 .avatar{
-    width:100%;
+    width:50%;
 }
 
 .quiz{
@@ -65,16 +81,16 @@ main {
 }
 
 section p {
-    text-align: justify;
     padding:2.5%;
-}
+     width:50%;
+     font-family: 'Overpass', sans-serif;
+     font-weight: 900;
+} 
 
 
 .Details h3{
-    text-align: justify;
-    width:100%;
     padding:2.5%;
-}
+} 
 
 #bottom-nav{
     margin-top:2%;
@@ -100,7 +116,10 @@ button{
     color:white;
     background-color:black;
     font-size:24px;
-    text-decoration: none;
+}
+
+button a{
+    text-decoration:none;
 }
 
 @media (min-width:768px){
@@ -117,4 +136,24 @@ button{
     }
 }
 
+@media only screen and (min-width:1600px){
+    header{
+        display:flex;
+        background-color:black;
+        margin:0 auto;
+        height:150px;
+    }
+        header #nav-container ul li{
+        border: 1px solid black;
+        border-radius:16px;
+        background-color:orange;
+        padding:20px;
+        width:15%;
+    }
+    main{
+        width:1200px;
+        margin:auto;
+    }
+    
+}
 
