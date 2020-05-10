@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+.section-heading{
+    font-size:2rem;
+}
+
 .center{
         text-align:start;
         display:flex;
